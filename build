@@ -15,12 +15,12 @@ unzip respinguy-github.zip
 rm respinguy-github.zip
 rm file-respinguy/ResPinGuy-File-Conf/respinguy-config
 cp respinguy-github/ResPinGuy-File-Conf/respinguy-config ./file-respinguy/ResPinGuy-File-Conf/
-rm respinguy-github/ResPinGuy-File/respinguy
-rm respinguy-github/ResPinGuy-File/respinguy-app-rm
-rm respinguy-github/ResPinGuy-File/respinguy-app-up
-cp file-respinguy/ResPinGuy-File/respinguy ./file-respinguy/ResPinGuy-File/
-cp file-respinguy/ResPinGuy-File/respinguy-app-rm ./file-respinguy/ResPinGuy-File/
-cp file-respinguy/ResPinGuy-File/respinguy-app-up ./file-respinguy/ResPinGuy-File/
+rm file-respinguy/ResPinGuy-File/respinguy
+rm file-respinguy/ResPinGuy-File/respinguy-app-rm
+rm file-respinguy/ResPinGuy-File/respinguy-app-up
+cp respinguy-github/ResPinGuy-File/respinguy ./file-respinguy/ResPinGuy-File/
+cp respinguy-github/ResPinGuy-File/respinguy-app-rm ./file-respinguy/ResPinGuy-File/
+cp respinguy-github/ResPinGuy-File/respinguy-app-up ./file-respinguy/ResPinGuy-File/
 cp -r respinguy-github/fork/ file-respinguy/ResPinGuy-File/
 cp respinguy-github/fork/Install-ResPinGuy .
 cp respinguy-github/fork/MAJ-ResPinGuy .
