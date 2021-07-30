@@ -3,6 +3,8 @@
 
 ![ResPinGuy](https://avatars.githubusercontent.com/u/88199930?v=4)
 
+!!! ResPinGuy ne fonctionne pas encore !!!
+
 ### Simple utilisateur :
 Install Command:
 
