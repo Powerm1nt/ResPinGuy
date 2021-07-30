@@ -1,0 +1,66 @@
+#!/bin/bash
+#######################################################################
+# Root
+allow_only_root()
+{
+  if [ "0$UID" -ne 0 ]; then
+     echo "Merci d'être en root pour lancer L'installation"; exit 1
+  fi
+}
+allow_only_root
+#######################################################################
+clear
+if [ ! $(type -p unzip) ]; then
+	clear
+   echo "Impossible de trouver la commande : unzip"
+   echo "Vous pouvez envisager d'installer le package contenant la commande."
+	exit 1
+fi
+read -p "Appuyez sur une touche pour lancer l'installation ..."
+#######################################################################
+# Téléchargement, deplacement, extraction, ...
+wget http://respinguy.tk/ftp/file-respinguy/file-respinguy.zip
+clear
+read -p "Continuer ..."
+mv file-respinguy.zip /tmp/
+echo "... [1/5]"
+cd /tmp/
+echo "... [2/5]"
+unzip file-respinguy.zip
+echo "... [3/5]"
+rm file-respinguy.zip
+echo "... [4/5]"
+cd /tmp/file-respinguy/
+echo "... [5/5]"
+#######################################################################
+# Copie, ...
+read -p "Continuer ..."
+cp respinguy /usr/bin/
+chmod +x /usr/bin/respinguy
+echo "... [1/4]"
+cp respinguy-app-rm /usr/bin/
+chmod +x /usr/bin/respinguy-app-rm
+echo "... [2/4]"
+cp respinguy-app-up /usr/bin/
+chmod +x /usr/bin/respinguy-app-up
+echo "... [3/4]"
+cp respinguy-build /usr/bin/
+chmod +x /usr/bin/respinguy-build
+echo "... [4/4]"
+echo "Les commandes sont Installer."
+#
+cp -r ResPinGuy-File/ /usr/share/
+echo "... [1/3]"
+cp -r respinguy-build-dir /
+echo "... [2/3]"
+rm -r /tmp/file-respinguy/
+echo "... [3/3]"
+echo "Les Fichiers sont Installer."
+#
+clear
+#######################################################################
+# echo "Verifier les Dependances, Lancer : respinguy-app-dep"
+echo "---"
+echo "MAJ - Terminer."
+echo "---"
+#######################################################################
