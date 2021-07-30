@@ -2,8 +2,8 @@
 
 echo 'hello :)'
 mkdir info
-cp LICENSE info/
-cp README.md info/
+mv LICENSE info/
+mv README.md info/
 cd file/
-
+cd ..
 rm build
