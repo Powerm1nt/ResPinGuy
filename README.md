@@ -5,7 +5,8 @@
 
 ### Simple utilisateur :
 Install Command:
-```
+
+```bash
 wget respinguy.tk/ftp/file-respinguy/Install-ResPinGuy && sudo bash Install-ResPinGuy && rm Install-ResPinGuy
 ```
 
