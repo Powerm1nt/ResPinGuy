@@ -1,9 +1,21 @@
 #!/bin/bash
 
-echo 'hello :)'
+echo "Prépation pour fork..."
+
 mkdir info
 mv LICENSE info/
 mv README.md info/
+
 cd file/
+unzip file-respinguy.zip
+unzip mkinitramfs-respinguy.zip
 cd ..
+mv file/file-respinguy .
+mv file/mkinitramfs-respinguy .
+mv file/respinguy-github.zip .
+rm -r file/
+unzip respinguy-github.zip
+rm respinguy-github.zip
+
 rm build
+echo "Terminer ..."
