@@ -1,11 +1,8 @@
 #!/bin/bash
-
 echo "Prépation pour fork..."
-
 mkdir info
 mv LICENSE info/
 mv README.md info/
-
 cd file/
 unzip file-respinguy.zip
 unzip mkinitramfs-respinguy.zip
@@ -16,6 +13,20 @@ mv file/respinguy-github.zip .
 rm -r file/
 unzip respinguy-github.zip
 rm respinguy-github.zip
-
+rm file-respinguy/ResPinGuy-File-Conf/respinguy-config
+cp respinguy-github/ResPinGuy-File-Conf/respinguy-config ./file-respinguy/ResPinGuy-File-Conf/
+rm respinguy-github/ResPinGuy-File/respinguy
+rm respinguy-github/ResPinGuy-File/respinguy-app-rm
+rm respinguy-github/ResPinGuy-File/respinguy-app-up
+cp file-respinguy/ResPinGuy-File/respinguy ./file-respinguy/ResPinGuy-File/
+cp file-respinguy/ResPinGuy-File/respinguy-app-rm ./file-respinguy/ResPinGuy-File/
+cp file-respinguy/ResPinGuy-File/respinguy-app-up ./file-respinguy/ResPinGuy-File/
+cp -r respinguy-github/fork/ file-respinguy/ResPinGuy-File/
+cp respinguy-github/fork/Install-ResPinGuy .
+cp respinguy-github/fork/MAJ-ResPinGuy .
+cp respinguy-github/fork/Remove-ResPinGuy .
+rm -rf respinguy-github/
 rm build
+clear
 echo "Terminer ..."
+echo "vous pouvez modifier les fichiers..."
