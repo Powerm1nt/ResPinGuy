@@ -12,6 +12,6 @@ wget respinguy.tk/ftp/file-respinguy/Install-ResPinGuy && sudo bash Install-ResP
 
 ### Forkeur :
 Fork Command:
-```
-  mkdir respinguy-fork && cd respinguy-fork && git clone ... && cd ResPinGuy && bash ./build
+```bash
+  mkdir respinguy-fork && cd respinguy-fork && git clone https://github.com/ResPinGuy/ResPinGuy.git && cd ResPinGuy && bash ./build
 ```
