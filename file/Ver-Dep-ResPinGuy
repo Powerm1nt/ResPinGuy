@@ -34,14 +34,6 @@ if [ ! $(type -p bash) ]; then
 	exit 1
 fi
 #_________________________________________________
-# Vérifier l'outils de ...
-if [ ! $(type -p ...) ]; then
-	clear
-   echo "Impossible de trouver la commande : ..."
-   echo "Vous pouvez envisager d'installer le package contenant la commande."
-	exit 1
-fi
-#_________________________________________________
 # Vérifier l'outils de uname
 if [ ! $(type -p uname) ]; then
 	clear
