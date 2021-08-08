@@ -23,7 +23,7 @@ rm file-respinguy/ResPinGuy-File/respinguy-app-dep
 cp respinguy-github/ResPinGuy-File/respinguy ./file-respinguy/ResPinGuy-File/
 cp respinguy-github/ResPinGuy-File/respinguy-app-rm ./file-respinguy/ResPinGuy-File/
 cp respinguy-github/ResPinGuy-File/respinguy-app-up ./file-respinguy/ResPinGuy-File/
-cp respinguy-github/ResPinGuy-File/respinguy-app-dep ./file-respinguy/ResPinGuy-File/
+cp respinguy-github/respinguy-app-dep ./file-respinguy/ResPinGuy-File/
 cp -r respinguy-github/fork/ file-respinguy/ResPinGuy-File/
 cp respinguy-github/fork/Install-ResPinGuy .
 cp respinguy-github/fork/MAJ-ResPinGuy .
