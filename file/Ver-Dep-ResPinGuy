@@ -84,13 +84,11 @@ fi
 #######################################################################
 echo "Tous les dépendances sont bien installer sur votre système"
 exit
-
-
 #_________________________________________________
 # Vérifier l'outils de ...
-if [ ! $(type -p ...) ]; then
-	clear
-   echo "Impossible de trouver la commande : ..."
-   echo "Vous pouvez envisager d'installer le package contenant la commande."
-	exit 1
-fi
+#if [ ! $(type -p ...) ]; then
+#	clear
+#   echo "Impossible de trouver la commande : ..."
+#   echo "Vous pouvez envisager d'installer le package contenant la commande."
+#	exit 1
+#fi
