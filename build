@@ -15,6 +15,7 @@ unzip respinguy-github.zip
 rm respinguy-github.zip
 rm file-respinguy/ResPinGuy-File-Conf/respinguy-config
 cp respinguy-github/ResPinGuy-File-Conf/respinguy-config ./file-respinguy/ResPinGuy-File-Conf/
+rm Ver-Dep-ResPinGuy
 rm file-respinguy/ResPinGuy-File/respinguy
 rm file-respinguy/ResPinGuy-File/respinguy-app-rm
 rm file-respinguy/ResPinGuy-File/respinguy-app-up
