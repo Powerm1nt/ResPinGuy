@@ -3,7 +3,7 @@
 
 ⚠!!! ResPinGuy ne fonctionne pas encore !!!⚠
 
-![ResPinGuy](https://avatars.githubusercontent.com/u/88199930?v=4)
+![ResPinGuy](http://respinguy.tk/logo-img-theme/logo/ResPinGuy-BF.png)
 
 ### Simple utilisateur :
 Install Command:
