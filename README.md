@@ -9,7 +9,7 @@
 Install Command:
 
 ```bash
-wget respinguy.tk/ftp/file-respinguy/Install-ResPinGuy && sudo bash Install-ResPinGuy
+wget respinguy.tk/FTP/file-respinguy/Install-ResPinGuy && sudo bash Install-ResPinGuy
 ```
 
 ### Forkeur :
