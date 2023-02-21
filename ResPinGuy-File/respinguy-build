@@ -34,7 +34,8 @@ echo "Terminé"
 echo "_ _ _"
 echo "Copie des fichiers de configuration ..."
 echo "."
-cp -r /usr/share/ResPinGuy-File/fichier/iso/* /respinguy-build-dir/.
+cp -r /usr/share/ResPinGuy-File/fichier/iso/live/ /respinguy-build-dir/.
+cp -r /usr/share/ResPinGuy-File/fichier/iso/isolinux/* /respinguy-build-dir/.
 cp /usr/share/ResPinGuy-File-Config/bootimg.png /respinguy-build-dir/isolinux/.
 cp /usr/share/ResPinGuy-File-Config/isolinux.cfg /respinguy-build-dir/isolinux/.
 echo "Terminé"

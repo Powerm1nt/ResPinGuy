@@ -79,7 +79,7 @@ fi
 # Vérifier l'outils dracut
 if [ ! $(type -p dracut) ]; then
     echo "Vérification des dépendances de dracut"
-    if [ ! $(type -p gcc) ]; then
+    if [ $(type -p gcc) ]; then
         echo "gcc n'est pas installé,"
         echo "nous ne sommes pas capables de forcer son installation..."
         echo "Nous travaillons pour que cela sois possible prochainement !"
@@ -91,7 +91,7 @@ if [ ! $(type -p dracut) ]; then
         echo "Nous travaillons pour que cela sois possible prochainement !"
         exit 1
     fi
-        if [ ! $(type -p zlib) ]; then
+        if [ "$(grep "zlib" *.so)" = "" ]; then
         echo "zlib n'est pas installé,"
         echo "nous ne sommes pas capables de forcer son installation..."
         echo "Nous travaillons pour que cela sois possible prochainement !"
