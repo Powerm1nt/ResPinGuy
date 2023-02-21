@@ -1,0 +1,52 @@
+#!/bin/bash
+#######################################################################
+clear
+rm rpg-ins
+# Root
+allow_only_root()
+{
+  if [ "0$UID" -ne 0 ]; then
+     echo "Merci d'être en root pour lancer L'installation"; exit 1
+  fi
+}
+allow_only_root
+#######################################################################
+# Copie, ...
+read -p "Continuer ..."
+cp ./ResPinGuy-CMD-and-DIR/respinguy /usr/bin/
+chmod +x /usr/bin/respinguy
+echo "... [1/6]"
+cp ./ResPinGuy-CMD-and-DIR/respinguy-app-rm /usr/bin/
+chmod +x /usr/bin/respinguy-app-rm
+echo "... [2/6]"
+cp ./ResPinGuy-CMD-and-DIR/respinguy-app-up /usr/bin/
+chmod +x /usr/bin/respinguy-app-up
+echo "... [3/6]"
+cp ./ResPinGuy-CMD-and-DIR/respinguy-build /usr/bin/
+chmod +x /usr/bin/respinguy-build
+echo "... [4/6]"
+cp ./ResPinGuy-CMD-and-DIR/respinguy-config /usr/bin/
+chmod +x /usr/bin/respinguy-config
+echo "... [5/6]"
+cp ./ResPinGuy-CMD-and-DIR/respinguy-app-dep /usr/bin/
+chmod +x /usr/bin/respinguy-app-dep
+echo "... [6/6]"
+echo "Les commandes sont Installer."
+#
+cp -r ResPinGuy-File-Config/ /usr/share/
+echo "... [1/3]"
+cp -r ResPinGuy-File/ /usr/share/
+echo "... [2/3]"
+cp -r ./ResPinGuy-CMD-and-DIR/respinguy-build-dir/ /
+echo "... [3/3]"
+echo "Les Fichiers sont Installer."
+#
+#######################################################################
+read -p "ResPinGuy sera executable sur votre machine après verification des dépendances. Terminer."
+clear
+echo "Verification des dépendence ..."
+bash /usr/share/ResPinGuy-File/respinguy-app-dep
+echo "---"
+echo "Lancer la commande : respinguy"
+echo "---"
+#######################################################################
