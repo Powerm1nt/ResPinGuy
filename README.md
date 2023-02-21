@@ -5,6 +5,11 @@
 
 ![ResPinGuy](http://respinguy.tk/logo-img-theme/logo/ResPinGuy-BF.png)
 
+### Dépendance :
+- git
+- wget
+- sudo
+
 ### Simple utilisateur :
 Install Command:
 
