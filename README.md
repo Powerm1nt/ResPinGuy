@@ -9,6 +9,14 @@
 - git
 - wget
 - sudo
+- bash
+- sh
+- nano
+- uname (avec prise en charge de -r et -m)
+- mksquashfs (avec prise en charge de -comp xz, la dépendance est généralement appelée: squashfs-tools)
+- dracut
+- xorriso
+
 
 ### Simple utilisateur :
 Install Command:
