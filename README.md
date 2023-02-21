@@ -24,11 +24,28 @@ Install Command:
 ```bash
 wget respinguy.tk/FTP/file-respinguy/Install-ResPinGuy && sudo bash Install-ResPinGuy
 ```
+<!--
+(Prochainement...)
+Install with sudo
+```bash
+wget respinguy.tk/ftp/file/rpg-ins && sudo bash rpg-ins
+```
+Install with su (root)
+```bash
+wget respinguy.tk/ftp/file/rpg-ins && bash rpg-ins
+```
+-->
 
 ### Forkeur :
 Fork Command:
 ```bash
   mkdir respinguy-fork && cd respinguy-fork && git clone https://github.com/ResPinGuy/ResPinGuy.git && cd ResPinGuy && bash ./build
 ```
+<!--
+(Prochainement...)
+```bash
+  git clone https://github.com/ResPinGuy/ResPinGuy.git
+```
+-->
 
 &copy; 2021 [ResPinGuy](http://respinguy.tk)
