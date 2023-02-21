@@ -9,8 +9,8 @@ allow_only_root()
 }
 allow_only_root
 #_____________________________________________________________________________________________
-nano /usr/share/ResPinGuy-File-Conf/respinguy-config
-cd /usr/share/ResPinGuy-File-Conf/
+nano /usr/share/ResPinGuy-File-Config/respinguy-config
+cd /usr/share/ResPinGuy-File-Config/
 clear
-ls /usr/share/ResPinGuy-File-Conf/
+ls /usr/share/ResPinGuy-File-Config/
 echo "Voici tout les fichiers modifiables | le dossier original-save/ est une savegarde de la configuration original"
