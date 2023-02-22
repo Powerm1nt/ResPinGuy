@@ -19,23 +19,23 @@ cd ResPinGuy
 #
 # Copie, ...
 read -p "Continuer ..."
-cp ./ResPinGuy-CMD-and-DIR/respinguy /usr/bin/
+cp ./ResPinGuy-CMD/respinguy /usr/bin/
 chmod +x /usr/bin/respinguy
 echo "... [1/4]"
-cp ./ResPinGuy-CMD-and-DIR/respinguy-app-rm /usr/bin/
+cp ./ResPinGuy-CMD/respinguy-app-rm /usr/bin/
 chmod +x /usr/bin/respinguy-app-rm
 echo "... [2/4]"
-cp ./ResPinGuy-CMD-and-DIR/respinguy-app-up /usr/bin/
+cp ./ResPinGuy-CMD/respinguy-app-up /usr/bin/
 chmod +x /usr/bin/respinguy-app-up
 echo "... [3/4]"
-cp ./ResPinGuy-CMD-and-DIR/respinguy-build /usr/bin/
+cp ./ResPinGuy-CMD/respinguy-build /usr/bin/
 chmod +x /usr/bin/respinguy-build
 echo "... [4/4]"
 echo "Les commandes sont Installer."
 #
 cp -r ResPinGuy-File/ /usr/share/
 echo "... [1/3]"
-cp -r ./ResPinGuy-CMD-and-DIR/respinguy-build-dir/ /
+cp -r ./ResPinGuy-CMD/respinguy-build-dir/ /
 echo "... [2/3]"
 rm -r /tmp/file-respinguy/
 echo "... [3/3]"

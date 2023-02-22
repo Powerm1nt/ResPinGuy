@@ -13,6 +13,17 @@ allow_only_root
 cd /usr/share/ResPinGuy-File-Config/
 . ./respinguy-config || exit 1
 #
+#######################################################################
+# Vérification les dependences
+bash /usr/share/ResPinGuy-File/respinguy-app-dep
+#######################################################################
+if [ ! $(dracut --list-modules | grep squash) ]; then
+   clear
+   echo "Impossible de trouver le module : squash"
+   echo "Vous pouvez envisager d'installer le package contenant le module."
+   echo "Généralement le package s'appel : dracut-squash"
+	exit 1
+fi
 #_____________________________________________________________________________________________
 #
 echo "_ _ _"
@@ -74,7 +85,7 @@ echo "Création de l'initrd ..."
 #
 # ( PROBLEME A LA CREATION DE L'INITRD !!! )
 #
-dracut -f -v --add squashfs --conf /usr/share/ResPinGuy-File-Config/dracut.config /respinguy-build-dir/live/initrd
+dracut -f -v --add squash /respinguy-build-dir/live/initrd
 #
 #
 #_____________________________________________________________________________________________

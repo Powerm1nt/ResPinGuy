@@ -12,32 +12,30 @@ allow_only_root
 #######################################################################
 # Copie, ...
 read -p "Continuer ..."
-cp ./ResPinGuy-CMD-and-DIR/respinguy /usr/bin/
+cp ./ResPinGuy-CMD/respinguy /usr/bin/
 chmod +x /usr/bin/respinguy
 echo "... [1/6]"
-cp ./ResPinGuy-CMD-and-DIR/respinguy-app-rm /usr/bin/
+cp ./ResPinGuy-CMD/respinguy-app-rm /usr/bin/
 chmod +x /usr/bin/respinguy-app-rm
 echo "... [2/6]"
-cp ./ResPinGuy-CMD-and-DIR/respinguy-app-up /usr/bin/
+cp ./ResPinGuy-CMD/respinguy-app-up /usr/bin/
 chmod +x /usr/bin/respinguy-app-up
 echo "... [3/6]"
-cp ./ResPinGuy-CMD-and-DIR/respinguy-build /usr/bin/
+cp ./ResPinGuy-CMD/respinguy-build /usr/bin/
 chmod +x /usr/bin/respinguy-build
 echo "... [4/6]"
-cp ./ResPinGuy-CMD-and-DIR/respinguy-config /usr/bin/
+cp ./ResPinGuy-CMD/respinguy-config /usr/bin/
 chmod +x /usr/bin/respinguy-config
 echo "... [5/6]"
-cp ./ResPinGuy-CMD-and-DIR/respinguy-app-dep /usr/bin/
+cp ./ResPinGuy-CMD/respinguy-app-dep /usr/bin/
 chmod +x /usr/bin/respinguy-app-dep
 echo "... [6/6]"
 echo "Les commandes sont Installer."
 #
 cp -r ResPinGuy-File-Config/ /usr/share/
-echo "... [1/3]"
+echo "... [1/2]"
 cp -r ResPinGuy-File/ /usr/share/
-echo "... [2/3]"
-cp -r ./ResPinGuy-CMD-and-DIR/respinguy-build-dir/ /
-echo "... [3/3]"
+echo "... [2/2]"
 echo "Les Fichiers sont Installer."
 #
 #######################################################################
