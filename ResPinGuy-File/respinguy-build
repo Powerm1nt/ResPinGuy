@@ -29,7 +29,8 @@ read -p "Appuyez sur une touche pour continuer ..."
 #
 cd /
 echo "Préparation de /respinguy-build/ ..."
-rm -rf /respinguy-build-dir/*
+rm -rf /respinguy-build-dir/
+mkdir /respinguy-build-dir/
 echo "Terminé"
 echo "_ _ _"
 echo "Copie des fichiers de configuration ..."
