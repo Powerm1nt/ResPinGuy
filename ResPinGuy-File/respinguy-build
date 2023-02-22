@@ -23,21 +23,25 @@ echo "Kernel Version : "$KERNEL" - Architecture : "$ARCH" Extension du squashfs 
 echo "Dossier copier a partir de / : "$ROOTDIR
 echo "Dossier de l'ISO final : "$RPGHOME" - Tout sera créer dans : /respinguy-build-dir/"
 echo "_ _ _"
+echo "Nettoyage de /respinguy-build/ ..."
+rm -rf /respinguy-build-dir/
 read -p "Appuyez sur une touche pour continuer ..."
 #
 #_________________________________________________
 #
 cd /
 echo "Préparation de /respinguy-build/ ..."
-rm -rf /respinguy-build-dir/
 mkdir /respinguy-build-dir/
 echo "Terminé"
 echo "_ _ _"
 echo "Copie des fichiers de configuration ..."
 echo "."
-cp -r /usr/share/ResPinGuy-File/fichier/iso/live/ /respinguy-build-dir/.
+mkdir /respinguy-build-dir/live/
+echo "."
 cp -r /usr/share/ResPinGuy-File/fichier/iso/isolinux/* /respinguy-build-dir/.
+echo "."
 cp /usr/share/ResPinGuy-File-Config/bootimg.png /respinguy-build-dir/isolinux/.
+echo "."
 cp /usr/share/ResPinGuy-File-Config/isolinux.cfg /respinguy-build-dir/isolinux/.
 echo "Terminé"
 echo "_ _ _"
