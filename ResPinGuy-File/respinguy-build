@@ -38,6 +38,8 @@ echo "Copie des fichiers de configuration ..."
 echo "."
 mkdir /respinguy-build-dir/live/
 echo "."
+mkdir /respinguy-build-dir/iso/
+echo "."
 cp -r /usr/share/ResPinGuy-File/fichier/iso/isolinux/* /respinguy-build-dir/.
 echo "."
 cp /usr/share/ResPinGuy-File-Config/bootimg.png /respinguy-build-dir/iso/isolinux/.
