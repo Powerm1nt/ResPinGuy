@@ -40,9 +40,9 @@ mkdir /respinguy-build-dir/live/
 echo "."
 cp -r /usr/share/ResPinGuy-File/fichier/iso/isolinux/* /respinguy-build-dir/.
 echo "."
-cp /usr/share/ResPinGuy-File-Config/bootimg.png /respinguy-build-dir/isolinux/.
+cp /usr/share/ResPinGuy-File-Config/bootimg.png /respinguy-build-dir/iso/isolinux/.
 echo "."
-cp /usr/share/ResPinGuy-File-Config/isolinux.cfg /respinguy-build-dir/isolinux/.
+cp /usr/share/ResPinGuy-File-Config/isolinux.cfg /respinguy-build-dir/iso/isolinux/.
 echo "Terminé"
 echo "_ _ _"
 echo "Création de $RPGHOME ..."
