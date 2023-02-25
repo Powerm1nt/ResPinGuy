@@ -12,9 +12,9 @@ RPGHOME=/home/ResPinGuy
 # Modifiable en fonction de la Distribution !
 #
 # Emplacement du noyaux dans le système :
-VMLINUZ=/boot/vmlinuz-$KERNEL
+VMLINUZ=/boot/vmlinuz-$(uname -r)
 # Emplacement de initramfs dans le système :
-INITRD=/boot/initrd-$KERNEL
+INITRD=/boot/initrd-$(uname -r)
 #
 #_____________________________________________________________________________________________
 # Non-Modifiable (expert) :
