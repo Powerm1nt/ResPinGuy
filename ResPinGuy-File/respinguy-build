@@ -82,12 +82,13 @@ clear
 echo "Création du squashfs 1/1 ..."
 read -p "Appuyez sur une touche pour continuer ..."
 echo "Création de l'initrd ..."
-#
 # ( PROBLEME A LA CREATION DE L'INITRD !!! )
 #
-dracut -f -v --add squash --conf /usr/share/ResPinGuy-File-Config/dracut.config  /respinguy-build-dir/live/initrd
-#dracut --force --all-modules /respinguy-build-dir/live/initrd
+dracut -f -v --conf /usr/share/ResPinGuy-File-Config/dracut.config  /respinguy-build-dir/live/initrd
 #
+#dracut -f -v --add squash --conf /usr/share/ResPinGuy-File-Config/dracut.config  /respinguy-build-dir/live/initrd
+#dracut --force --all-modules /respinguy-build-dir/live/initrd
+read -p "Appuyez sur une touche pour continuer ..."
 #_____________________________________________________________________________________________
 #Script Build
 cd /

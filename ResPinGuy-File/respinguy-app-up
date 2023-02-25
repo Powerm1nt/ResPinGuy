@@ -34,11 +34,9 @@ echo "... [4/4]"
 echo "Les commandes sont Installer."
 #
 cp -r ResPinGuy-File/ /usr/share/
-echo "... [1/3]"
-cp -r ./ResPinGuy-CMD/respinguy-build-dir/ /
-echo "... [2/3]"
+echo "... [1/2]"
 rm -r /tmp/file-respinguy/
-echo "... [3/3]"
+echo "... [2/2]"
 echo "Les Fichiers sont Installer."
 #
 cd /tmp/
