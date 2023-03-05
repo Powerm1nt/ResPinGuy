@@ -12,9 +12,9 @@ RPGHOME=/home/ResPinGuy
 # Modifiable en fonction de la Distribution !
 #
 # Emplacement du noyaux dans le système :
-VMLINUZ=/boot/vmlinuz-$KERNEL
+VMLINUZ=/boot/vmlinuz-$(uname -r)
 # Emplacement de initramfs dans le système :
-INITRD=/boot/initrd-$KERNEL
+INITRD=/boot/initrd-$(uname -r)
 #
 #_____________________________________________________________________________________________
 # Non-Modifiable (expert) :
@@ -23,8 +23,6 @@ INITRD=/boot/initrd-$KERNEL
 KERNEL=$(uname -r)
 # Architecture du CPU
 ARCH=$(uname -m)
-# Extension de l'image squashfs :
-SQEX=squashfs
 # Dossier de la racine (/) qui seront build (si vous ajoutez, ne pas mettre de /)
 ROOTDIR="bin boot etc home lib lib64 opt root sbin srv usr var"
 #_____________________________________________________________________________________________
