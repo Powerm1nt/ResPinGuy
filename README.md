@@ -33,7 +33,7 @@ wget respinguy.tk/ftp/file/rpg-ins && bash rpg-ins
 ### Forkeur :
 Fork Command:
 ```bash
-  git clone https://github.com/ResPinGuy/ResPinGuy.git
+git clone https://github.com/ResPinGuy/ResPinGuy.git
 ```
 
 &copy; 2023 [ResPinGuy](https://respinguy.tk)
