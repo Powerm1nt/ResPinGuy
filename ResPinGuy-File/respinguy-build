@@ -24,6 +24,13 @@ if [ ! $(dracut --list-modules | grep squash) ]; then
    echo "Généralement le package s'appel : dracut-squash"
 	exit 1
 fi
+if [ ! $(dracut --list-modules | grep dmsquash-live) ]; then
+   clear
+   echo "Impossible de trouver le module : dmsquash-live"
+   echo "Vous pouvez envisager d'installer le package contenant le module."
+   echo "Généralement le package s'appel : dracut-live"
+	exit 1
+fi
 #_____________________________________________________________________________________________
 clear
 echo "_ _ _"
