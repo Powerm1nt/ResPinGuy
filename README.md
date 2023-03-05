@@ -36,4 +36,8 @@ Fork Command:
 git clone https://github.com/ResPinGuy/ResPinGuy.git
 ```
 
+### Documentation
+[Documentation](https://github.com/France-OPG/ResPinGuy/blob/main/documentation.md)
+
+
 &copy; 2023 [ResPinGuy](https://respinguy.tk)
