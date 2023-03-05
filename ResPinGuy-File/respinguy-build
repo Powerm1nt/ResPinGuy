@@ -82,7 +82,7 @@ for i in $ROOTDIR; do
       SQSFDIR="$SQSFDIR /$i"
    fi
 done
-mksquashfs $SQSFDIR /respinguy-build-dir/LiveOS/squashfs.img  \
+mksquashfs $SQSFDIR /respinguy-build-dir/LiveOS/squashfs.img -comp xz -b 1024K -always-use-fragments -keep-as-directory \
  -noappend                 \
  -wildcards                \
  -e "proc/*"               \
