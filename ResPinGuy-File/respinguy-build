@@ -18,13 +18,14 @@ cd /usr/share/ResPinGuy-File-Config/
 bash /usr/share/ResPinGuy-File/respinguy-app-dep
 #######################################################################
 if [ ! $(dracut --list-modules | grep squash) ]; then
+   clear
    echo "Impossible de trouver le module : squash"
    echo "Vous pouvez envisager d'installer le package contenant le module."
    echo "Généralement le package s'appel : dracut-squash"
 	exit 1
 fi
 #_____________________________________________________________________________________________
-
+clear
 echo "_ _ _"
 echo "Résumer avant création"
 echo "---"
@@ -33,14 +34,14 @@ echo "Kernel Version : "$KERNEL" - Architecture : "$ARCH" Extension du squashfs 
 echo "Dossier copier a partir de / : "$ROOTDIR
 echo "Dossier de l'ISO final : "$RPGHOME" - Tout sera créer dans : /respinguy-build-dir/"
 echo "_ _ _"
-# echo "Nettoyage de /respinguy-build/ ..."
-# rm -rf /respinguy-build-dir/
-
+echo "Nettoyage de /respinguy-build-dir/ ..."
+rm -rf /respinguy-build-dir/
+read -p "Appuyez sur une touche pour continuer ..."
 #
 #_________________________________________________
 #
 cd /
-echo "Préparation de /respinguy-build/ ..."
+echo "Préparation de /respinguy-build-dir/LiveOS ..."
 mkdir -p /respinguy-build-dir/LiveOS
 echo "Terminé"
 echo "_ _ _"
@@ -62,6 +63,8 @@ echo "Copie de $VMLINUZ ..."
 cp $VMLINUZ /respinguy-build-dir/vmlinuz
 ##########################################################################################################################################################
 echo "Terminé"
+read -p "Appuyez sur une touche pour continuer ..."
+clear
 #
 #_____________________________________________________________________________________________
 # Création de l'image squashfs :
@@ -72,7 +75,6 @@ for i in $ROOTDIR; do
       SQSFDIR="$SQSFDIR /$i"
    fi
 done
-
 mksquashfs $SQSFDIR /respinguy-build-dir/LiveOS/squashfs.img  \
  -noappend                 \
  -wildcards                \
@@ -91,24 +93,22 @@ mksquashfs $SQSFDIR /respinguy-build-dir/LiveOS/squashfs.img  \
  -e "home/*/.bash_history" \
  -e "home/*/.cache"        \
  -e "home/*/.wget-hsts"
-
+clear
 echo "Création du squashfs 1/1 ..."
-
+read -p "Appuyez sur une touche pour continuer ..."
 echo "Création de l'initrd ..."
 # ( PROBLEME A LA CREATION DE L'INITRD !!! )
 #
 dracut -N -a dmsquash-live /respinguy-build-dir/initrd --force
-
-# dracut -a dmsquash-live --add-drivers overlay --add-drivers squashfs -i /usr/share/ResPinGuy-File-Config/fstab /etc/fstab -N -m "kernel-modules base" --filesystems "overlay squashfs" /respinguy-build-dir/initrd --force
-
-
+#
+read -p "Appuyez sur une touche pour continuer ..."
 #_____________________________________________________________________________________________
 #Script Build
 cd /
 xorriso -as mkisofs -r -J -joliet-long -l -iso-level 3 -cache-inodes -isohybrid-mbr /usr/share/ResPinGuy-File/fichier/isohdpfx.bin -partition_offset 16 -A "$RPGBUILDNAME"  -b isolinux/isolinux.bin -c isolinux/boot.cat -no-emul-boot -boot-load-size 4 -boot-info-table -o $RPGHOME/$RPGBUILDNAME-$ARCH.iso /respinguy-build-dir/
-
+clear
 echo "_ _ _"
 echo "Terminé. vous pourez votre résultat dans $RPGHOME"
 echo "_ _ _"
-#rm -rf /respinguy-build-dir/*
+# rm -rf /respinguy-build-dir/*
 #_____________________________________________________________________________________________
