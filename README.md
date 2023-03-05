@@ -14,7 +14,7 @@
 - nano
 - uname (avec prise en charge de -r et -m)
 - mksquashfs (avec prise en charge de -comp xz, la dépendance est généralement appelée: squashfs-tools)
-- dracut
+- dracut (avec prise en charge des modules squash et dmsquash-live)
 - xorriso
 
 
