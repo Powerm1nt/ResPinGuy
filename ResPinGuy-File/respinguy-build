@@ -99,14 +99,20 @@ mksquashfs $SQSFDIR /respinguy-build-dir/LiveOS/squashfs.img -comp xz -b 1024K -
  -e "root/.wget-hsts"      \
  -e "home/*/.bash_history" \
  -e "home/*/.cache"        \
- -e "home/*/.wget-hsts"
+ -e "home/*/.wget-hsts"    \
+ -e "$RPGHOME"
 clear
 echo "Création du squashfs 1/1 ..."
 read -p "Appuyez sur une touche pour continuer ..."
 echo "Création de l'initrd ..."
 # ( PROBLEME A LA CREATION DE L'INITRD !!! )
 #
-dracut -N -a dmsquash-live /respinguy-build-dir/initrd --force
+dracut -N -a dmsquash-live --add-fstab /usr/share/ResPinGuy-File-Config/fstab /respinguy-build-dir/initrd --force
+#dracut -N -a dmsquash-live /respinguy-build-dir/initrd --force
+#
+#dracut -N -a dmsquash-live --conf /usr/share/ResPinguy-File-Config/dracut.conf /respinguy-build-dir/initrd --force
+#dracut -N -a dmsquash-live  --filesystems "squashfs" /respinguy-build-dir/initrd --force
+# --filesystems "squashfs"
 #
 read -p "Appuyez sur une touche pour continuer ..."
 #_____________________________________________________________________________________________

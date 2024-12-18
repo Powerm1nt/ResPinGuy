@@ -69,4 +69,4 @@ Supprimer respinguy :
 respinguy-app-rm
 ```
 
-&copy; 2023 [ResPinGuy](https://respinguy.fopg.fr/)
+&copy; 2023 [ResPinGuy](https://respinguy.tk)

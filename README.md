@@ -3,7 +3,7 @@
 
 ⚠!!! ResPinGuy ne fonctionne pas encore !!!⚠
 
-![ResPinGuy](https://respinguy.tk/logo-img-theme/logo/ResPinGuy-BF.png)
+![ResPinGuy](https://respinguy.fopg.fr/logo-img-theme/logo/ResPinGuy-BF.png)
 
 ### Dépendance :
 - git
@@ -23,11 +23,11 @@ Install Command:
 
 Install with sudo :
 ```bash
-wget respinguy.tk/ftp/file/rpg-ins && sudo bash rpg-ins
+wget respinguy.fopg.fr/ftp/file/rpg-ins && sudo bash rpg-ins
 ```
 Install with su (root) :
 ```bash
-wget respinguy.tk/ftp/file/rpg-ins && bash rpg-ins
+wget respinguy.fopg.fr/ftp/file/rpg-ins && bash rpg-ins
 ```
 
 ### Forkeur :
@@ -40,4 +40,4 @@ git clone https://github.com/ResPinGuy/ResPinGuy.git
 [Documentation](https://github.com/France-OPG/ResPinGuy/blob/main/documentation.md)
 
 
-&copy; 2023 [ResPinGuy](https://respinguy.tk)
+&copy; 2023 [ResPinGuy](https://respinguy.fopg.fr/)
